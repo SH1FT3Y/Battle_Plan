@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Battle Plan — 8-Week Shred</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#0b1220">
+</head>
+<body>
+  <header>
+    <h1>Battle Plan — 8-Week Shred</h1>
+    <p id="week-label">Week 1 • Day 1</p>
+  </header>
+
+  <main>
+    <section class="today">
+      <h2>Morning Conditioning</h2>
+      <div id="conditioning"></div>
+      <button id="done-conditioning">Mark Done</button>
+    </section>
+
+    <section class="workout">
+      <h2>Home Workout</h2>
+      <div id="workout-desc"></div>
+      <button id="done-workout">Mark Done</button>
+    </section>
+
+    <section class="class">
+      <h2>Weight Class</h2>
+      <p>Do whatever the coach says. Mark it done below.</p>
+      <button id="done-class">Mark Done</button>
+    </section>
+
+    <section class="logs">
+      <h2>Quick Logs</h2>
+      <div class="log-row">
+        <label>Weight (lbs)</label>
+        <input type="number" id="weight-input" placeholder="e.g. 140">
+        <button id="save-weight">Save</button>
+      </div>
+      <div class="log-row">
+        <label>Lift / Note</label>
+        <input id="note-input" placeholder="Bench 185x4 or notes">
+        <button id="save-note">Save</button>
+      </div>
+      <div id="history"></div>
+    </section>
+
+    <section class="controls">
+      <button id="prev-day">◀ Prev Day</button>
+      <button id="next-day">Next Day ▶</button>
+      <button id="reset-week">Reset Week</button>
+      <button id="export-data">Export Data</button>
+    </section>
+
+    <section class="print">
+      <h2>Printable Plan</h2>
+      <button id="print-plan">Open Printable Sheet</button>
+    </section>
+  </main>
+
+  <footer>
+    <small>Works offline. Data is stored on your device.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
